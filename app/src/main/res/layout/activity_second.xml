@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second">
+
+    <LinearLayout
+        android:id="@+id/backLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/number01Layout"
+        android:layout_below="@id/backLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Number 01"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/num01"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/number02Layout"
+        android:layout_below="@id/number01Layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Number 02"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/num02"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultShowLayout"
+        android:layout_below="@id/number02Layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Result"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnRow01Layout"
+        android:layout_below="@id/resultShowLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:layout_height="70dp">
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="100dp"
+            android:text="+"
+            android:clickable="true"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="100dp"
+            android:text="-"
+            android:clickable="true"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnRow02Layout"
+        android:layout_below="@id/BtnRow01Layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:layout_height="70dp">
+
+
+        <Button
+            android:id="@+id/multyBtn"
+            android:layout_width="100dp"
+            android:text="*"
+            android:clickable="true"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/divideBtn"
+            android:layout_width="100dp"
+            android:text="/"
+            android:clickable="true"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
